@@ -1,0 +1,63 @@
+http(s)://www.neuefische.de:80/standort#frankfurt
+
+Protokoll: http(s)://
+
+URL: www.neuefische.de
+
+Port: 80 (für http)
+
+Pfad: /standort
+
+Anker/ Fragment: #frankfurt
+Für Verlinkung auf einer Seite, wenn die Seite aus mehreren Segmenten besteht.
+
+www.google.de/search?q=test
+Query Parameter: search?q=test
+
+Der Pot für https ist 443.
+
+## Postman
+Programm Postman installieren!
+-> kann auch ohne Account genutzt werden.
+
+Postman benutzt verschiedene Verben:
+
+| Verb  | Bedeutung                                                                                                                                             |
+|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GET   | Liest eine Ressource/ Variable/ Objekt                                                                                                                |
+| POST  | Erstellt eine neue Ressource/ Variable/ Objekt  <br> <br> POST ist nicht Idempotent. Jeder Aufruf führt zu einer neuen Antwort.                       |
+| PUT   | Aktualisiert eine Ressource/ Variable/ Objekt oder erstellt diese neu. <br> <br> PUT ist idempotent, d.h. wiederholte Anwendung hat keine Auswirkung. |
+
+## Links
+rfc-editor.org
+restfulapi.net
+
+datatracker.ietf.org/doc/html/rfc1738
+
+The Rick and Morty Api: https://rickandmortyapi.com/
+
+http.cat
+
+link to the currently valid RFC documentation of HTTP: https://datatracker.ietf.org/doc/html/rfc7231
+
+## JSON
+Steht für "JavaScript Object Notation"
+
+```json
+{
+  "name": "Max",
+  "age": 30,
+  "isStudent": true,
+  "address": {
+    "street": "Musterstraße 123",
+    "city": "Musterstadt"
+  },
+  "hobbies": ["Tennis", "Gitarre"]
+}
+```
+
+## Rick and Morty API
+Hiermit erhält man alle lebenden Charaktere:
+`https://rickandmortyapi.com/api/character/?status=alive`
+
+Hiermit erhält man alle Charaktere, die in der ersten Staffel vorkommen:
