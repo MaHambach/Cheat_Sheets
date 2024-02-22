@@ -19,7 +19,7 @@
 <dependency>
     <groupId>org.mockito</groupId>
     <artifactId>mockito-core</artifactId>
-    <version>3.12.4</version> <!-- Aktuelle Version hier einfügen -->
+    <version>5.10.0</version> <!-- Aktuelle Version hier einfügen -->
     <scope>test</scope>
 </dependency>
 ```

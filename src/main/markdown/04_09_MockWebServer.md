@@ -10,6 +10,63 @@ Projekt einbinden. Fügen Sie dazu die folgende Abhängigkeit in Ihre pom.xml-Da
     <scope>test</scope>
 </dependency>
 ```
+## Beispiel Code - Initialisierung des MockWebServers:
+```java
+import okhttp3.mockwebserver.MockWebServer;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+public class MyApiTest {
+
+    private static MockWebServer mockWebServer;
+
+    @BeforeAll
+    static void beforeAll() throws IOException {
+        mockWebServer = new MockWebServer();
+        mockWebServer.start();
+    }
+
+    @AfterAll
+    static void tearDown() throws IOException {
+        mockWebServer.shutdown();
+    }
+
+    @DynamicPropertySource
+    static void backendProperties(DynamicPropertyRegistry registry) {
+        registry.add("rickandmorty.url", () -> mockWebServer.url("/").toString());
+    }
+
+
+    // Weitere Testmethoden...
+}
+```
+
+## Beispiel Code - Testen von HTTP-Anfragen und -Antworten:
+```java
+@Test
+public void testApiCall() throws IOException {
+    
+    mockWebServer.enqueue(new MockResponse()
+            .setBody("""
+                        [{
+                            "name": "Mayo",
+                            "id": "1"
+                        }]
+                    """)
+            .addHeader("Content-Type", "application/json"));
+
+    mockMvc.perform(MockMvcRequestBuilders.get("/api/items/"))
+            .andExpect(status().isOk())
+            .andExpect(content().json("""
+                    [{
+                        "name": "Mayo",
+                        "id": "1"
+                    }]
+                    """));
+}
+```
 
 ## Was ist MockWebServer?: 
 MockWebServer ist eine Testbibliothek von OkHttp, mit der Sie einen simulierten Webserver in Ihren Tests starten können.

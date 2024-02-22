@@ -17,19 +17,19 @@
 Maven Abhängigkeiten für Integrationstests hinzufügen:
 ```xml
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-test</artifactId>
-<scope>test</scope>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
 </dependency>
 ```
 
 Für einen Fake-Server:
 ```xml
 <dependency>
-<groupId>de.flapdoodle.embed</groupId>
-<artifactId>de.flapdoodle.embed.mongo.spring3x</artifactId>
-<version>4.12.0</version>
-<scope>test</scope>
+    <groupId>de.flapdoodle.embed</groupId>
+    <artifactId>de.flapdoodle.embed.mongo.spring3x</artifactId>
+    <version>4.12.0</version>
+    <scope>test</scope>
 </dependency>
 ```
 Im Testordner muss dann ein Verbindungsstring für den Fake-Server in die `application.properties` eingefügt werden:
