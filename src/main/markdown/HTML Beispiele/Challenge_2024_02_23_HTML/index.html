@@ -1,0 +1,203 @@
+<!--
+Task 1:
+    Create the basic structure of an HTML page for a blog.
+
+    Step 1: Create an HTML file with a suitable name.
+
+    Step 2: Let your creativity run wild and create a blog page with the
+            following elements:
+        * Title
+        * Heading
+        * Paragraph
+        * Image
+        * List
+        * Link
+        * Quote
+        * Comment
+
+    Feel free to use www.allthetags.com for reference.
+
+Task 2:
+    Create a CSS file to add some color to your blog.
+
+        Change the font and font color of your title.
+
+        Style your list (of blog entries) so that:
+
+            the first entry has a blue background
+
+            the second entry has a red background
+
+            the third entry has a green background.
+
+
+
+        Add a rounded border to one of your tags.
+
+        Try out other CSS properties.
+
+Task 3:
+    Wow, you guys are fast! If you like, also work on this voluntary bonus task.
+
+        Step 1: Create an HTML file and a CSS file with a suitable name.
+        Step 2: Add the title of the product page.
+        Step 3: Create a heading that represents the product name.
+        Step 4: Insert an image of the product accompanied by a suitable description.
+        Step 5: Create a brief product description with some features.
+        Step 6: Add an unordered list of the product's advantages.
+        Step 7: Create a section for customer reviews (at least two reviews).
+
+    Please post the link to your HTML page on GitHub where you solved the task.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bees!!!</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a blog page with HTML elements." />
+    <meta name="author" content="John Doe" />
+</head>
+<body class="body">
+    <header class="header">
+        <h1>Welcome to My Blog</h1>
+    </header>
+    <main class="main">
+        <div class="divTextAndImage">
+            <div class="divText">
+                  <article>
+                        <h2>My Blog</h2>
+                        <p>This is my first blog post. I am so excited to share my thoughts with you.</p>
+                        <ul>
+                            <li>First point</li>
+                            <li>Second point</li>
+                            <li>Third point</li>
+                        </ul>
+                        <a href="https://www.example.com">Click here</a> to learn more.
+                        <blockquote cite="https://www.example.com">This is a quote from a famous person.</blockquote>
+                        <footer>
+                            <p>Comments: 5</p>
+                        </footer>
+                  </article>
+            </div>
+            <div class="divImage">
+                <img class="imgBienenBild" src="https://images.freeimages.com/images/large-previews/aed/three-bees-on-sunflower-1337029.jpg" alt="Three Bees on Sunflower" width="300" height="200">
+                <p class="pSource">&copy; "three bees on sunflower" von Krappweis</p>
+            </div>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                 <h2 class="blog-title">Die faszinierende Welt der Bienen</h2>
+                <p class="blog-date">Veröffentlicht am 1. Februar 2024</p>
+                <p class="blog-content">Bienen sind erstaunliche Insekten, die eine entscheidende Rolle in unserem Ökosystem spielen.</p>
+                <details class="details">
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Als Hauptbestäuber vieler Pflanzenarten sind sie unverzichtbar für die Produktion von Nahrungsmitteln und die Aufrechterhaltung der biologischen Vielfalt. Aber ihre Bedeutung geht weit über das Bestäuben hinaus.</p>
+                    <p>Wusstest du, dass Bienen äußerst soziale Insekten sind, die in komplexen Gemeinschaften, den sogenannten Bienenvölkern, leben? Jedes Volk besteht aus einer Königin, Arbeiterinnen und Drohnen, die alle spezifische Rollen und Aufgaben haben. Die Königin ist für die Eiablage verantwortlich, während die Arbeiterinnen die täglichen Aufgaben wie die Futtersuche, die Pflege der Brut und die Verteidigung des Nestes übernehmen. Die Drohnen hingegen haben die Aufgabe, die Königin zu begatten.</p>
+                    <p>Ein weiteres faszinierendes Merkmal der Bienen ist ihre bemerkenswerte Kommunikationsfähigkeit. Sie verwenden komplexe Tanzsprachen, um ihren Artgenossen die Lage von Blüten und anderen Ressourcen mitzuteilen. Durch bestimmte Tanzbewegungen können sie ihren Kolleginnen genau mitteilen, in welcher Richtung und Entfernung sie eine bestimmte Nahrungsquelle finden.</p>
+                    <p>Aber nicht nur das: Bienen produzieren auch eines der erstaunlichsten Naturprodukte - Honig. Durch das Sammeln von Nektar und dessen Umwandlung durch spezielle Drüsen in ihrem Körper entsteht dieser süße und klebrige Stoff, der nicht nur als Nahrung dient, sondern auch für seine medizinischen und antibakteriellen Eigenschaften geschätzt wird.</p>
+                    <p>In der modernen Welt sind Bienen jedoch vielen Bedrohungen ausgesetzt. Der Einsatz von Pestiziden, der Verlust natürlicher Lebensräume und der Klimawandel gefährden das Überleben dieser wichtigen Insekten. Es ist daher von entscheidender Bedeutung, Maßnahmen zum Schutz der Bienen und ihres Lebensraums zu ergreifen, um ihre wichtige Rolle in unserem Ökosystem zu erhalten.</p>
+                    <p>In diesem Blogpost werden wir uns weiter mit der faszinierenden Welt der Bienen beschäftigen und Möglichkeiten erkunden, wie wir zu ihrem Schutz beitragen können. Bleib dran für weitere spannende Einblicke in das Leben dieser bemerkenswerten Insekten!</p>
+                </details>
+            </article>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                <h2 class="blog-title">Die Bedeutung der Bestäubung</h2>
+                <p class="blog-date">Veröffentlicht am 5. Februar 2024</p>
+                <p class="blog-content">Ohne die Bestäubung durch Bienen und andere Bestäuber wären viele Pflanzenarten nicht in der Lage, sich fortzupflanzen...</p>
+                <details>
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Ohne die Bestäubung durch Bienen und andere Bestäuber wären viele Pflanzenarten nicht in der Lage, sich fortzupflanzen. Dieser wichtige Prozess ermöglicht es den Pflanzen, Samen zu produzieren und sich zu vermehren, was wiederum die Grundlage für die gesamte Nahrungsmittelproduktion bildet.</p>
+                    <p>Die Bedeutung der Bestäubung erstreckt sich jedoch über die Pflanzenwelt hinaus. Viele Tierarten, einschließlich Vögel, Säugetiere und Insekten, hängen direkt oder indirekt von bestäubten Pflanzen für ihre Nahrung ab. Durch die Bestäubung entstehen auch vielfältige Lebensräume für eine Vielzahl von Tierarten.</p>
+                    <p>Darüber hinaus spielt die Bestäubung eine wichtige Rolle in der Landwirtschaft. Viele Nutzpflanzen, darunter Obst- und Gemüsesorten, benötigen Bestäuber, um eine gute Ernte zu produzieren. Ohne ausreichende Bestäubung können Ertragsverluste auftreten, was sich negativ auf die Nahrungsmittelversorgung und die Wirtschaft auswirken kann.</p>
+                    <p>In jüngster Zeit haben jedoch Bedenken über den Rückgang der Bestäuberpopulationen weltweit zugenommen. Faktoren wie der Einsatz von Pestiziden, der Verlust natürlicher Lebensräume und der Klimawandel haben zu einem Rückgang der Bestäuberpopulationen geführt, was ernsthafte Auswirkungen auf die Nahrungsmittelproduktion und die biologische Vielfalt haben kann.</p>
+                    <p>Es ist daher von entscheidender Bedeutung, Maßnahmen zum Schutz der Bestäuber zu ergreifen und ihre Lebensräume zu erhalten. Dies kann durch die Schaffung von blühenden Lebensräumen, die Reduzierung des Einsatzes von Pestiziden und die Förderung nachhaltiger landwirtschaftlicher Praktiken erreicht werden.</p>
+                    <p>In diesem Blogpost werden wir uns genauer mit der Bedeutung der Bestäubung und den Herausforderungen für ihre Erhaltung befassen. Bleiben Sie dran für weitere Einblicke in dieses wichtige Thema!</p>
+                </details>
+            </article>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                <h2 class="blog-title">Die soziale Struktur eines Bienenstocks</h2>
+                <p class="blog-date">Veröffentlicht am 10. Februar 2024</p>
+                <p class="blog-content">Ein Bienenstock ist eine komplexe Gemeinschaft von Bienen, die in einem gut organisierten sozialen System leben...</p>
+                <details>
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Ein Bienenstock ist eine komplexe Gemeinschaft von Bienen, die in einem gut organisierten sozialen System leben. Innerhalb des Bienenstocks gibt es verschiedene Kasten von Bienen, die unterschiedliche Rollen und Aufgaben haben.</p>
+                    <p>Die Königin ist das zentrale Mitglied des Bienenstocks und verantwortlich für die Eiablage. Sie wird von den Arbeiterinnen gepflegt und ernährt und spielt eine entscheidende Rolle bei der Fortpflanzung des Bienenstocks.</p>
+                    <p>Die Arbeiterinnen bilden die Mehrheit der Bienen im Bienenstock und übernehmen eine Vielzahl von Aufgaben, darunter die Nahrungssuche, die Pflege der Brut und die Verteidigung des Bienenstocks. Sie sind für den reibungslosen Betrieb des Bienenstocks unerlässlich.</p>
+                    <p>Die Drohnen sind die männlichen Bienen im Bienenstock und ihre Hauptaufgabe besteht darin, sich mit der Königin zu paaren. Sie haben keine Stacheln und können keine Nahrung sammeln oder den Bienenstock verteidigen.</p>
+                    <p>Die soziale Struktur eines Bienenstocks ist faszinierend und gut durchdacht. Jede Biene trägt auf ihre Weise zum Wohlergehen des Bienenstocks bei, und ihre kooperative Zusammenarbeit ist entscheidend für das Überleben der Kolonie.</p>
+                </details>
+            </article>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                <h2 class="blog-title">Bienenprodukte und ihre Verwendung</h2>
+                <p class="blog-date">Veröffentlicht am 15. Februar 2024</p>
+                <p class="blog-content">Bienen produzieren nicht nur Honig, sondern auch andere nützliche Produkte wie Wachs, Propolis und Gelée Royale...</p>
+                <details>
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Bienen produzieren nicht nur Honig, sondern auch andere nützliche Produkte wie Wachs, Propolis und Gelée Royale. Jedes dieser Produkte hat seine eigenen einzigartigen Eigenschaften und Anwendungen.</p>
+                    <p>Wachs wird von Bienen zur Herstellung ihrer Waben verwendet. Es ist ein vielseitiges Material, das in der Kerzenherstellung, Kosmetikproduktion und sogar in der Medizin Verwendung findet.</p>
+                    <p>Propolis ist eine klebrige Substanz, die Bienen aus Harz herstellen, das sie von Bäumen sammeln. Es wird verwendet, um den Bienenstock abzudichten und vor Krankheiten zu schützen. Propolis hat auch antimikrobielle und entzündungshemmende Eigenschaften und wird in der alternativen Medizin häufig zur Behandlung von Erkältungen und anderen Beschwerden eingesetzt.</p>
+                    <p>Gelée Royale ist eine spezielle Substanz, die von Bienenlarven gefüttert wird. Es ist reich an Nährstoffen und wird von Bienen verwendet, um ihre Königinnenlarven zu ernähren. Gelée Royale wird oft als Nahrungsergänzungsmittel für Menschen verwendet und soll eine Vielzahl von gesundheitlichen Vorteilen bieten, einschließlich gesteigerter Energie und Immunität.</p>
+                </details>
+            </article>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                <h2 class="blog-title">Die Bedrohung der Bienen und was wir tun können</h2>
+                <p class="blog-date">Veröffentlicht am 20. Februar 2024</p>
+                <p class="blog-content">Bienen sind heute verschiedenen Bedrohungen ausgesetzt, darunter Pestizide, Krankheiten und Lebensraumverlust. Es ist wichtig, Maßnahmen zu ergreifen, um diese wichtigen Bestäuber zu schützen...</p>
+                <details>
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Bienen sind heute verschiedenen Bedrohungen ausgesetzt, darunter Pestizide, Krankheiten und Lebensraumverlust. Es ist wichtig, Maßnahmen zu ergreifen, um diese wichtigen Bestäuber zu schützen.</p>
+                    <p>Ein wichtiger Schritt ist die Reduzierung des Einsatzes von Pestiziden, insbesondere solcher, die für Bienen besonders schädlich sind. Landwirte können alternative Methoden wie biologische Schädlingsbekämpfung und den Anbau von bienenfreundlichen Pflanzen verwenden, um den Einsatz von Chemikalien zu minimieren.</p>
+                    <p>Es ist auch wichtig, Lebensräume für Bienen zu schaffen und zu erhalten. Das bedeutet, blühende Pflanzen anzubauen, die reich an Nektar und Pollen sind, sowie natürliche Lebensräume wie Wiesen und Wälder zu schützen.</p>
+                    <p>Darüber hinaus können Einzelpersonen dazu beitragen, indem sie bienenfreundliche Gärten anlegen, bienenfreundliche Produkte kaufen und sich für den Schutz der Bienen einsetzen.</p>
+                </details>
+            </article>
+        </div>
+
+        <div class="divBlog-post">
+            <article>
+                <h2 class="blog-title">Wie man einen bienenfreundlichen Garten anlegt</h2>
+                <p class="blog-date">Veröffentlicht am 25. Februar 2024</p>
+                <p class="blog-content">Mit einigen einfachen Schritten können Sie Ihren Garten bienenfreundlicher gestalten und dazu beitragen, die Lebensbedingungen für diese wichtigen Insekten zu verbessern...</p>
+                <details>
+                    <summary> Hier klicken, um mehr zu erfahren. </summary>
+                    <p>Mit einigen einfachen Schritten können Sie Ihren Garten bienenfreundlicher gestalten und dazu beitragen, die Lebensbedingungen für diese wichtigen Insekten zu verbessern.</p>
+                    <p>1. Wählen Sie bienenfreundliche Pflanzen: Entscheiden Sie sich für Pflanzen, die reich an Nektar und Pollen sind, wie Lavendel, Sonnenblumen, Salbei und Klee.</p>
+                    <p>2. Vermeiden Sie Pestizide: Verzichten Sie auf den Einsatz von chemischen Pestiziden, da diese für Bienen schädlich sein können. Verwenden Sie stattdessen natürliche Schädlingsbekämpfungsmethoden.</p>
+                    <p>3. Pflanzen Sie in Gruppen: Bienen bevorzugen große Gruppen von Blumen, da sie dadurch effizienter Nahrung sammeln können. Pflanzen Sie also Pflanzen in Gruppen oder Beeten.</p>
+                    <p>4. Bieten Sie Wasser an: Stellen Sie eine flache Schale mit Wasser in Ihrem Garten auf, damit Bienen trinken können.</p>
+                    <p>5. Lassen Sie einige Bereiche wild: Lassen Sie Teile Ihres Gartens unberührt und wild wachsen, um natürliche Lebensräume für Bienen zu schaffen.</p>
+                    <p>Indem Sie diese Tipps befolgen, können Sie dazu beitragen, einen lebendigen und gesunden Lebensraum für Bienen in Ihrem eigenen Garten zu schaffen.</p>
+                </details>
+            </article>
+        </div>
+    </main>
+    <aside>
+        <h2>Recent Posts</h2>
+        <ul>
+            <li>Post 1</li>
+            <li>Post 2</li>
+            <li>Post 3</li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2021 John Doe</p>
+    </footer>
+</body>
+</html>

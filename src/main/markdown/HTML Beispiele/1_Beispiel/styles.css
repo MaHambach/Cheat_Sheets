@@ -1,0 +1,28 @@
+/* Definiert die Textfarbe und die Hintergrundfarbe für den Body */
+body {
+    color: #333; /* Dunkelgraue Textfarbe */
+    background-color: #f0f0f0; /* Hellgraue Hintergrundfarbe */
+}
+
+/* Legt die Schriftart und Schriftgröße für Überschriften fest */
+h1 {
+    font-family: Arial, sans-serif; /* Schriftart Arial oder Standard-Schriftart */
+    font-size: 24px; /* Schriftgröße 24 Pixel */
+}
+
+/* Legt die Schriftfarbe für Links fest und entfernt die Unterstreichung */
+a {
+    color: #007bff; /* Blaue Farbe für Links */
+    text-decoration: none; /* Keine Unterstreichung für Links */
+}
+
+/* Definiert den Innen- und Außenabstand für einen Container */
+.divContainer {
+    padding: 20px; /* Innenabstand von 20 Pixeln */
+    margin: 10px 0 0 10px; /* Zentriert den Container horizontal */
+    width: 200px; /* Breite des Containers auf 80% des Bildschirms */
+    background-color: #fff; /* Weißer Hintergrund für den Container */
+    border: 1px solid #ccc; /* Dünner grauer Rand um den Container */
+    border-radius: 20px; /* Rundet alle vier Ecken um 10 Pixel */
+    display: inline-block;
+}

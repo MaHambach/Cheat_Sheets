@@ -1,0 +1,72 @@
+.header {
+    position: sticky; /* Positionierung des Headers ist fest */
+    width: 100%; /* Die Breite des Headers soll 100% der Bildschirmbreite sein */
+    background-color: #ffe369; /* Hintergrundfarbe des Headers */
+    padding: 10px; /* Innenabstand des Headers */
+    margin: -10px;
+}
+
+.body {
+    color: #333;
+    background-color: #ffffff;
+}
+
+.main {
+    margin-top: 6px;
+}
+
+.divBlog-post {
+    background-color: #f9f9f9;
+    border: 2px solid #000;
+    margin: 0 10px 20px 10px;
+    padding: 20px;
+    border-radius: 20px; /* Rundet alle vier Ecken um 10 Pixel */
+}
+
+.blog-title {
+    font-size: 24px;
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    font-size: 16px;
+}
+
+.divText {
+    flex: 1; /* Der Text nimmt den verfügbaren Platz ein */
+    padding: 20px; /* Fügen Sie Platz um den Text hinzu */
+}
+
+.divImage {
+    flex: 1;
+    width: 100%; /* Das Bild nimmt die gesamte Breite des Containers ein */
+    height: auto; /* Die Höhe des Bildes passt sich automatisch an */
+    display: block; /* Das Bild wird als Blockelement angezeigt */
+}
+
+.imgBienenBild {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 20px; /* Rundet alle vier Ecken um 10 Pixel */
+}
+
+.divTextAndImage {
+    display: flex;
+}
+
+.pSource {
+    font-size: 12px;
+    color: #666;
+}
+
+.details {
+    background-color: #f0f0f0;
+}
