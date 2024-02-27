@@ -1,5 +1,9 @@
 # MongoDB
 
+## Einbinden der MongoDB
+
+Siehe [Java Spring Data](04_04_Java%20Spring%20Data.md).
+
 ## Vergleichsoperatoren
 | Operator | Beschreibung                                    |
 |----------|-------------------------------------------------|
