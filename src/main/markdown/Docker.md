@@ -200,6 +200,13 @@ jobs:
           curl -X POST ${{ secrets.RENDER_DEPLOY }} #muss mit der url des Render Deployments übereinstimmen
 ```
 
+### Secrets
+In den Repository-Einstellungen müssen die folgenden Secrets hinterlegt werden:
+
+* `DOCKERHUB_USERNAME`: Der Name des Docker-Accounts.
+* `DOCKERHUB_PASSWORD`: Das Passwort des Docker-Accounts.
+* `DOCKERHUB_TAG`: Der Name des Images.
+* `RENDER_DEPLOY`: Die URL des Render Deployments.
 
 ## Render
 Render ist eine vereinheitlichte Cloud, um alle Ihre Apps und Websites mit kostenlosen TLS-Zertifikaten, einem globalen CDN, DDoS-Schutz, privaten Netzwerken und automatischen Bereitstellungen aus Git zu erstellen und auszuführen.
